@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="main" id="quizDisplay">
+        <div class="container">
+            <div class="header p-3 ">
+                <h3>Quiz App</h3> <h3><span class="fs-5" id="questionNumber">1</span>/<span id="totalQuestionNumber">6</span></h3> 
+            </div>
+            <div class="question mt-5 text-white p-5 shadow" > <h3 id="question"></h3></div>
+            <div class="row" id="options">
+                
+                    <!-- <div class="col-md-6"> 
+                        <button class="btn btn-light mt-3 py-3 p-2 w-100 shadow">HTML</button>
+                        </div>
+                        <div class="col-md-6"> 
+                            <button class="btn btn-light mt-3 py-3 p-2 w-100 shadow">HTML</button>
+                            </div>
+                            <div class="col-md-6"> 
+                                <button class="btn btn-light mt-3 p-2 py-3 w-100 shadow">HTML</button>
+                                </div> -->
+
+            </div>
+            <button class="btn btn-success mt-5 px-5 d-flex justify-content-end" onclick="nextQuestion()" >NEXT</button>
+        </div>
+    </div>
+
+    <div style="display: none" id="resultDisplay">
+        <div class="container p-3">
+            <div class="background-primary text-danger">
+                <h1>Your Result is :  <span id="showMarks"></span>%</h1>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="app.js"></script>  
+</body>
+</html>
